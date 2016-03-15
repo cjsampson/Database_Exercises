@@ -30,3 +30,11 @@ SELECT first_name, last_name
 FROM employees
 WHERE last_name
 LIKE 'Q%';
+
+-- DESCRIBE employees;
+-- Replace IN with OR
+SELECT first_name, last_name
+FROM employees
+WHERE first_name =  'Irena'
+OR first_name = 'Vidya'
+OR first_name = 'Maya';
