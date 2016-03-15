@@ -27,6 +27,7 @@
 
 USE codeup_test_db;
 
+TRUNCATE albums;
 
 INSERT INTO albums(artist, album_name, release_date, sales, genre)
 VALUES 
