@@ -38,3 +38,12 @@ FROM employees
 WHERE first_name =  'Irena'
 OR first_name = 'Vidya'
 OR first_name = 'Maya';
+
+-- DESCRIBE employees;
+-- Add condition to find everybody with those names who is also male
+SELECT first_name, last_name, gender
+FROM employees
+WHERE gender =  'M'
+AND  first_name IN (
+	'Maya', 'Irena', 'Vidya' );
+
