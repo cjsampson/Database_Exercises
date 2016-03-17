@@ -43,3 +43,11 @@ WHERE birth_date LIKE '%12-25'
 AND hire_date LIKE '199%'
 ORDER BY birth_date ASC, 
 	      hire_date DESC;
+
+-- Unique lnames without qu
+SELECT last_name
+FROM employees 
+WHERE last_name NOT LIKE '%QU%'
+AND last_name LIKE '%Q%'
+GROUP BY last_name;
+
