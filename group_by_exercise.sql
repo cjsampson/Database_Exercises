@@ -1,0 +1,3 @@
+-- DISTINCT 
+SELECT DISTINCT title FROM titles;
+
