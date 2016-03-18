@@ -19,3 +19,4 @@ FROM employees
 WHERE last_name LIKE 'E%'
 OR last_name LIKE '%E'
 ORDER BY emp_no;
+
