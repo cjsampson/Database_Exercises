@@ -20,3 +20,11 @@ WHERE last_name LIKE 'E%'
 OR last_name LIKE '%E'
 ORDER BY emp_no;
 
+-- How many days working
+SELECT birth_date,hire_date, DATEDIFF(CURDATE() ,hire_date) AS 'Days with company'
+FROM employees
+WHERE birth_date LIKE '%12-25'
+AND hire_date LIKE '199%'
+ORDER BY birth_date ASC, 
+	      hire_date DESC;
+
