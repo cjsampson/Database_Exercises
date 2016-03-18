@@ -28,3 +28,11 @@ AND hire_date LIKE '199%'
 ORDER BY birth_date ASC, 
 	      hire_date DESC;
 
+-- Add COUNT() and ORDER BY to see who has the same name
+SELECT COUNT(last_name), last_name 
+FROM employees 
+WHERE last_name LIKE '%Q%'
+AND last_name NOT LIKE '%QU%'
+GROUP BY last_name
+ORDER BY COUNT(last_name) ASC;
+
