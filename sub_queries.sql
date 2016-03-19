@@ -25,3 +25,4 @@ WHERE emp_no IN (
 	 FROM dept_manager
 	 WHERE gender = 'f'
 );
+
