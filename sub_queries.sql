@@ -16,3 +16,12 @@ WHERE emp_no IN (
 	WHERE first_name = 'Aamod'
 )
 GROUP BY title;
+
+-- Dept managers that are female
+SELECT first_name, last_name, gender
+FROM employees 
+WHERE emp_no IN (
+	 SELECT emp_no
+	 FROM dept_manager
+	 WHERE gender = 'f'
+);
